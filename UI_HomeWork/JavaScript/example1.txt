@@ -1,0 +1,28 @@
+Q: Difference between == and ===.
+
+Ans :
+1. http://stackoverflow.com/questions/359494/which-equals-operator-vs-should-be-used-in-javascript-comparisons
+
+== :  it will compare the equality after doing all the necessary type conversions.
+===:  It will not do any type conversions. i.e it checks the two values whether they are same type or not, if not then it will return false.
+
+
+
+2. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness.
+
+==  : It scrictly compares two values for equality
+=== : It converts both values to common type and compares for equality
+
+
+
+3. http://stackoverflow.com/questions/1094531/when-should-you-use-vs-vs-etc-in-javascript
+
+==   :  It will perform the type conversion, it treats string as number or an object as a string when required.
+===  : It is an identity operator, used to test the value and type are equal.
+
+
+
+4. http://www.2ality.com/2011/06/javascript-equality.html
+
+==   : It tries to convert values of different types before comparing.
+===  : It only considers equal, if they have the same type.

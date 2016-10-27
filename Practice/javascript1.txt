@@ -1,0 +1,23 @@
+JavaScript:
+
+Scripting Language
+Interpreted Language : Line by line it is executed (no complication is required)
+
+Data Types : undefined 
+ 			 number
+ 			 string
+ 			 boolean
+ 			 object
+ 			    null
+ 			    array
+ 			 function
+
+ To print in Javascript we write
+
+   --- console.log('print info in console')
+   --- document.write('write in the document')
+   --- alert('block the page and show information')
+
+
+   Undefined : you have declared a variable but not assigned any value to that
+   null      : Intensionally want to make it blank

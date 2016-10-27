@@ -1,0 +1,7 @@
+CSS
+
+Inline CSS    : we provide style attribute and all style sheets in that
+Internal CSS  : we use style element for all style sheets
+External CSS  : we try to have link element and with in that we try to provide css in seperate .css file
+
+Good Practices of CSS : External is good practice( program is precise, we can change the styling of entire website without disturbing existing html program, more readable)
