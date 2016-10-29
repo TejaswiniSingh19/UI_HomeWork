@@ -1,0 +1,22 @@
+Data Types in Java Script
+Data Types : undefined 
+ 			 number
+ 			 string
+ 			 boolean
+ 			 object
+ 			    null
+ 			    array
+ 			 function
+
+
+
+Undefined  : you have declared a variable but not assigned any value to that.
+String     : It is a series of characters.
+Boolean    : It has two values i.e true or false
+Numbers    : It has only one type of numbers, it can be with or without decimals.
+Objects    : They are written in curly braces, and written as name : value pairs, seperated by commas.
+	arrays : They are written in square brackets with commas.
+    null   : Intensionally want to make it blank It is an assignment value.
+Functions  : These are block of code written to perform a particular task.
+
+
