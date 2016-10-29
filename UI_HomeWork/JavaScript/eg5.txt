@@ -1,0 +1,18 @@
+Alert in javascript.?
+
+
+Site1  :  http://www.w3schools.com/jsref/met_win_alert.asp
+
+          alert() displays an alert box with specified message in it and an OK button
+
+
+
+Site2  :  http://www.w3schools.com/js/js_popup.asp
+
+          An alert box is often used if you want to make sure information comes through to the user.
+           When an alert box pops up, the user will have to click "OK" to proceed.
+
+
+Site3  :   https://developer.mozilla.org/en-US/docs/Web/API/Window/alert
+
+           This method displays an alert box with optional message in it with an OK button
