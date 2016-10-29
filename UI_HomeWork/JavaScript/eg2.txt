@@ -1,0 +1,22 @@
+2. this keyword in javascript.?
+
+Ans :  
+
+Site1:  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
+
+		It works little different in JavaScript compared to other languages. Mainly it is determined by how function is called ,it may be different each time the function is called.
+
+
+Site2:  http://www.quirksmode.org/js/this.html
+		It is one of the most powerful keywords in JavaScript. We should know the exact usage of it before you use. "this" keyword in JavaScript always refers to its owner of the function we are executing.
+
+
+Site3 : https://rainsoft.io/gentle-explanation-of-this-in-javascript/
+		It mainly refers to the instance of current ojects in the class method and it cannot be used outside the method.
+
+
+Site4 :  http://www.w3schools.com/js/js_object_definition.asp
+		 "this" is not a variable it is a keyword and its value cannot be changed.
+
+
+
