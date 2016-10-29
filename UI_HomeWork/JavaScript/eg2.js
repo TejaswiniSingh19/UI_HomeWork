@@ -1,21 +1,12 @@
-<!DOCTYPE html>
-<html>
-	<body>
-		<script>
-			function book(author, publisher, age, releasedate) {
-    		this.bauthor  = author;
-    		this.bpublish = publisher;
-    		this.bage     = age;
+
+			function book(author, publisher, age) {
+    		this.author  = author;
+    		this.publish = publisher;
+    		this.age     = age;
    		    
 			}
 
 
-			var revolution = new book("Chethan Bhagath", "Rose", 45);
-			
-
-			document.getElementById("demo").innerHTML =
-			
-		</script>
-
-	</body>
-</html>
+			var book1 = new book("Chethan Bhagath", "Rose", 45);
+	
+document.write(book1.age)
