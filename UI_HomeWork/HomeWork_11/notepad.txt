@@ -1,12 +1,41 @@
+
 1.Explain about arr.forEach and arr.map , compare the difference.?
 Ans :
 
+
 2) object and object methods (.hasOwnProperty(item))
+Ans :
+
+An object is a collection of properties, and it has a name (or key) and a value.
+
 
 3) diff ways of creating an object.?
+Ans : 
+
+There are 3 ways of creating an object.
+	1. By using a function: Uses a this key word
+			function hi(a)
+			{
+			this.c=a;
+			}
+			var d= new hi(3);
+
+	2.Using object literals
+		   var a = {
+
+		   };
+		    instead of
+		   var a = new Object();
+
+	3.
+
+
+	http://www.phpied.com/3-ways-to-define-a-javascript-class/
+
 
 
 4) understand about properties in object. look into about adding property, delete a property, edit property value, check if a property exists?
+Ans : 
 
 
 

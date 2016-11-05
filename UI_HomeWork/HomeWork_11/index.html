@@ -7,8 +7,8 @@
 		<script>
 			var arr=["Java",".Net","SQL","Hadoop"];
 			arr1=arr.forEach(function(item,index){
-			arr4=	index + "is value of "+ item;
-			return arr4;
+			console.log(index + "is value of "+ item);
+
 			});
 
 
@@ -16,6 +16,45 @@
 			arr3=index + "is value of "+ item;
 				return arr3;
 			});
+		</script>
+
+		<h3>Ways of creating an object</h3>
+		<script type="text/javascript">
+			var bus = {From:"Uppal",To:"Kachiguda",Ticket:50};
+			console.log(bus);
+
+
+			var express = new Object();
+			express.ffrom = "Himayatnagar";
+			express.fto = "Malakpet";
+			express.fticket = 60;
+			console.log(express); 
+			document.write(express.ffrom + "<br>");
+			document.write(express.fto + "<br>");
+			document.write(express.fticket + "<br>");
+
+
+			function metro(from,to,ticket)
+			{
+				this.ffrom = from;
+				this.fto = to;
+				this.fticket = ticket;
+			}
+
+			var local = new metro("ecil","nagole",100);
+			var deluxe = new metro("Kotapet","Tarnaka",75);
+			console.log(local);
+			document.write(local.ffrom + "<br>");
+			document.write(local.fto+ "<br>");
+			document.write(local.fticket + "<br>");
+			document.write(deluxe.ffrom + "<br>");
+			document.write(deluxe.fto + "<br>");
+			document.write(deluxe.fticket + "<br>");
+			console.log(deluxe);
+
+
+		</script>
+
 
 		
 
