@@ -1,0 +1,74 @@
+1. Logical and, logical or.?
+Ans : 
+Logical && : Returns true if both the operands are true, otherwise false.
+             exp1 && exp2
+             Returns exp1 if it can be converted to true, otherwise returns exp2
+Logical || : Returns true if either of the operand is true.
+			 exp1||exp2
+			 Returns exp1 if it is converted to true, otherwise false.
+
+
+References :
+http://www.w3schools.com/js/js_comparisons.asp
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators
+http://www.w3resource.com/javascript/operators/logical-operator.php
+http://gregfranko.com/blog/javascript-logical-operators/
+http://www.quirksmode.org/js/boolean.html
+
+2. string methods (..........).?
+Ans :
+
+1. charAt() 	: Returns the character at the given specified position
+			  	  charAt(5);
+2. slice()  	: It consists of start, end indexes. It extracts a part of a string between the given indexes.
+ 			  	  slice(start,end);
+3. substr() 	: It works similar to slice().first parameter specifies the start of the string, if                   the first parameter is negative it will count from the end of the string.
+			      Second parameter defines the length of the string and it cannot be negative.
+			      substr(start,length);
+4.substring()   : similar to slice and cannot accept negative values
+			      substring(start,end);
+5. indexOf()    : 
+6. lastindexOf():
+7.search()      : Searches the specific parameter and displays the index of it
+8.replace()     : It is used to replace one value with the given another value
+9.toUpperCase() : It converts the string to upper case.
+10.toLowerCase(): It converts the string to lower case.
+11.concat()     : It is used to combine two or more string and store the result in a new string.
+12.split()      :
+13.charcodeAt() :
+
+References :
+http://www.w3schools.com/js/js_string_methods.asp
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+https://www.sitepoint.com/15-javascript-string-functions/
+https://msdn.microsoft.com/en-us/library/ecczf11c(v=vs.94).aspx
+
+
+3. Array Methods ..?
+Ans :
+ Creating an array is similar to creating a new objects. It is collection of similar types of elements. Array is an object but object is not an array.
+ concat()  : It is almost similar to concat() in string.
+
+ var a = new Array("","","");
+        or
+ var a = ["","",""];
+
+ length()    : It will specify the length of an array.
+ toString()  : 
+ pop()       : It removes the last element from the string.
+ push(item)  : It adds one or more elements to the end of the array.
+ shift()     : It removes the first element from the array 
+ unshift(item): It adds a new element in the beginning of the array.
+ indexOf()   : It specifies the index of the given element.
+ splice()    : It is used to add/delete an element from array.
+               It is used to split the array into 2
+ slice()     : slice(start,end);
+ sort()      : It displays the array in alphabetical order
+ reverse()   : It reverses the array
+
+
+
+Reference :
+http://www.w3schools.com/js/js_array_methods.asp
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+https://www.tutorialspoint.com/javascript/javascript_arrays_object.htm

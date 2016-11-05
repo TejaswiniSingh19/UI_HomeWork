@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script >
+		    document.write("LOGICAL AND" + "<br>");
+			var a;
+			a = true && true;
+			document.write(a + "<br>");
+			var b;
+			b = true && (2==3);	
+			document.write(b + "<br>");	
+			var c;
+			c = " " && true;
+			document.write(c + "<br>");
+			document.write("LOGICAL OR" +"<br>");
+			var d;
+			d = false || false;
+			document.write(d + "<br>");
+			var e;
+			e = false || (2 == 3);
+			document.write(e + "<br>");
+			var f;
+			f = " " || false;
+			document.write(f + "<br>");
+	
+		</script>
+	<h4>String Methods</h4>
+		<script type="text/javascript">
+			var str = "Hadoop,java,javascript,Java";
+			document.write(str.charAt(5) + "<br>"+"<br>");
+			document.write(str.slice(8,14) + "<br>"+"<br>");
+			document.write(str.slice(-8,-14) + "<br>"+"<br>");
+			document.write(str.substr(2,8) + "<br>"+"<br>");
+			document.write(str.substring(2,5) + "<br>"+"<br>");
+			document.write(str.indexOf("java") + "<br>"+"<br>");
+			document.write(str.lastIndexOf("java") + "<br>"+"<br>");
+			document.write(str.search("java") + "<br>"+"<br>");
+			document.write(str.replace("java",".Net") + "<br>"+"<br>");
+			document.write(str.toUpperCase() + "<br>"+"<br>");
+			document.write(str.toLowerCase() + "<br>"+"<br>");
+			var s1 = "computer";
+			var s2 = "science";
+			var s3 = s1.concat(s2);
+			document.write(s3 + "<br>"+"<br>");
+
+		</script>
+	<h4> Array Methods</h4>
+		<script type="text/javascript">
+			var p1 = new Array("Shalu","Mads","Raps");
+			var p2 = ["Gouthami","Sukanya","leela"];
+			var people=p1.concat(p2);
+			document.write(people + "<br>"+"<br>");
+			document.write(people[2] + "<br>"+"<br>");
+			document.write(people[7] + "<br>"+"<br>");
+			people.pop();
+			document.write(people + "<br>"+"<br>");
+			people.push("leela");
+			document.write(people + "<br>"+"<br>");
+			people.shift();
+			document.write(people + "<br>"+"<br>");
+			people.unshift("Shalu");
+			document.write(people + "<br>"+"<br>");
+			document.write(people.indexOf("Raps") + "<br>"+"<br>");
+			document.write(people.sort() + "<br>"+"<br>");
+			document.write(people.reverse() + "<br>"+"<br>");
+			document.write(people.length + "<br>"+"<br>");
+			document.write(people.slice(3,6) + "<br>"+"<br>");
+
+
+
+
+
+		</script>
+
+
+	</body>
+</html>

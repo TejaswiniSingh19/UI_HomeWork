@@ -1,0 +1,44 @@
+1) constructor? and new key word? why do we use it?
+Ans :
+Constructor : To create multiple similar objects with the same properties and methods we use the constructor.
+              When a constructor is called :
+              It creates a new object,
+             new keyword is used to create a new object
+
+
+2) instanceof : 
+  
+  It returns is a Boolean value if the specific object is an instance of constructor
+
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof
+http://www.w3schools.com/jsref/jsref_operators.asp
+http://javascript.info/tutorial/instanceof
+
+
+3) prototype.?
+ 
+ It is a single object which is applied to whole class or constructor, it is used outside the function.
+
+ http://www.w3schools.com/js/js_object_prototypes.asp
+ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype
+ http://stackoverflow.com/questions/12064104/prototype-keyword-in-javascript
+
+
+4) this key word.?
+Ans :
+Site1:  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
+
+        It works little different in JavaScript compared to other languages. Mainly it is determined by how function is called ,it may be different each time the function is called.
+
+
+Site2:  http://www.quirksmode.org/js/this.html
+        It is one of the most powerful keywords in JavaScript. We should know the exact usage of it before you use. "this" keyword in JavaScript always refers to its owner of the function we are executing.
+
+
+Site3 : https://rainsoft.io/gentle-explanation-of-this-in-javascript/
+        It mainly refers to the instance of current ojects in the class method and it cannot be used outside the method.
+
+
+Site4 :  http://www.w3schools.com/js/js_object_definition.asp
+         "this" is not a variable it is a keyword and its value cannot be changed.

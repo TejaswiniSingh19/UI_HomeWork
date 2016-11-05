@@ -1,0 +1,122 @@
+1) Opertion Precedence.?
+Ans :
+The order in which operators are evaluated is determined by operator precedence. The operator with highest precedence will be evaluated first
+Eg : 4+5*8
+Multiplication will be performed first and then it will be added to the result
+(4+5+6)*7
+In the above example because the brackets has the highest percedence it will be evaluated first and then the result will me multiplied with the given number
+
+()    :  Method         :  left to right
+++    : Increment       :  right to left
+--    : Decrement       :  right to left
+/     : Division        :  left to right
+*     : Multiplication  :  left to right
++     : Plus            :  left to right
+!     : Logical NOT     :  right to left
+
+References :
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+http://www.scriptingmaster.com/javascript/operator-precedence.asp
+https://msdn.microsoft.com/en-us/library/z3ks45k7(v=vs.94).aspx
+http://docs.w3cub.com/javascript/operators/operator_precedence/
+
+
+
+
+2) Difference between == and === .?
+Ans :
+Site1. http://stackoverflow.com/questions/359494/which-equals-operator-vs-should-be-used-in-javascript-comparisons
+		== :  it will compare the equality after doing all the necessary type conversions.
+		===:  It will not do any type conversions. i.e it checks the two values whether they are same type or not, if not then it will return   false.
+
+Site2. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness.
+		==  : It scrictly compares two values for equality
+		=== : It converts both values to common type and compares for equality
+
+Site3. http://stackoverflow.com/questions/1094531/when-should-you-use-vs-vs-etc-in-javascript
+		==   :  It will perform the type conversion, it treats string as number or an object as a string when required.
+		===  : It is an identity operator, used to test the value and type are equal.
+
+Site4. http://www.2ality.com/2011/06/javascript-equality.html
+		==   : It tries to convert values of different types before comparing.
+		===  : It only considers equal, if they have the same type.
+
+
+3)Difference between != and !==  .?
+Ans  :
+Site1.  http://www.w3schools.com/js/js_comparisons.asp
+		!=   : It is not equal to operator.
+		!==  : It is not equal value or not equal type.
+Site2.  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Comparison_operators
+		!=   : It returns TRUE if the operands are not equal
+		!==  : 
+
+
+
+
+4) Difference between null and undefined .?
+Ans  :
+Site1     : http://stackoverflow.com/questions/5076944/what-is-the-difference-between-null-and-undefined-in-javascript
+		Undefined : you have declared a variable but not assigned any value to that
+		null      : Intensionally want to make it blank It is an assignment value.
+Site2     : https://www.quora.com/What-is-the-difference-between-undefined-and-null-in-JavaScript
+		Undefined : The value of a variable with no value is undefined.
+		null      : Variables can be emptied by setting their value to null.
+Site3     : http://lucybain.com/blog/2014/null-undefined-undeclared/
+		Undefined : If the value hasn't been defined yet .
+		null      : It is variable defined to have null value
+Site4     : http://www.w3schools.com/js/js_datatypes.asp
+		Undefined : It is a variable without a value, has the value undefined.
+		null      :  In Javascript the datatype of object is null , You can also empty the oject by setting it to null, it means " nothing".
+
+
+
+5) loop (for, while and do while) and conditons (if else, switch).?
+Ans  :
+Loops run the block of code until the given condition is true
+for      : Generally a for loop has three statements.
+           for( declaration , condition , increment/decrement)
+           {
+              // code to be executed
+           }
+           Declaration : we can also declare a variable inside the for loop or outside the for loop.
+           condition   : checks the condition each time and code inside the loop will be executed untill the condition is false.
+           increment   : after executing the loop it will either increment/decrement.
+
+while    : It will only execute if the specific condition is true.
+           while(condition)
+           {
+              // statements
+           }
+do-while : It will execute the code once before checking the condition is true or not ; if the condition is true then it will repeat the 
+              code as log as condition is true.
+              do
+              {
+                // statement
+              }
+              while(condition)
+
+
+              If we forget to give condition in while loop , the code will execute many number of times.
+ If-else  :  if (condition) 
+  			 {
+    			block of code to be executed if the condition is true
+			 }
+			 else
+			 { 
+    			block of code to be executed if the condition is false
+			 }
+			 we can give as many conditions in else if statements
+
+Switch   :  switch code is evaluated once.
+   			It has an expression and each case will be compared to that expression in switch, if it matches that block of code is executed.
+   			switch(exp)
+   			case 1 : code
+   					 break;
+   			case 2 : code
+   			         break;
+   			case n : code
+   			         break;
+   			default : code
+
+   			

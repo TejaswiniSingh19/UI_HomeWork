@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Home Work 9</title>
+	</head>
+	<body>
+
+	    	<script type="text/javascript">
+	    		var hi = "Sir said,\"Complete the HomeWork\"";
+		    	document.write(hi + "<br>");
+	    	</script>
+
+			<script type="text/javascript">
+		    	var a= 2+4*5+6;
+		    	console.log(typeof a)
+				document.write(a + "<br>");
+				document.write((2+4)*5+6+"<br>");
+				document.write((9/3)-4+5 + "<br>");			
+			</script>
+
+		
+			<script type="text/javascript">
+		    	document.write(8/2+4*2); 
+			</script>
+
+		<p id="demo2" style="border: 1px solid black;"></p>
+            <script>
+            	
+            			var x = 6;
+            			var y = x++;
+            			document.getElementById("demo2").innerHTML = x + " " + y;
+                        /* document.getElementById("demo2").innerHTML = y;*/         		
+            		
+            </script>
+
+         	<script type="text/javascript">
+            	console.log(6 == '6'); 
+            	console.log(2 === '2'); 
+            	console.log(true == '2');
+            	console.log(true === '2');
+            	console.log(undefined == null);
+            	console.log(undefined === null);
+            	console.log("Hello World" == new String("Hello World"));
+            	console.log(typeof new String("Hello World"));
+        	</script>
+
+        	<script type="text/javascript">
+        		var a=[];
+        		var b=[];
+        		var c=a;
+        		document.write(a == b);
+                document.write("<br>");
+        		document.write(a === b);
+                document.write("<br>");
+        		document.write(a == c);
+                document.write("<br>");
+        		document.write(a === c);
+
+        	</script>
+
+        <h1> LOOPS </h1>
+        <h3> FOR loop</h3>
+
+        	<script type="text/javascript">
+        		var i;
+        		for (i = 0;i < 5; i++) 
+        		{
+                   
+                   document.write(" Print number :"+i +"<br>");
+
+        		}	
+            
+
+        	</script>
+
+        <p id="demo5"></p>
+
+        	<script type="text/javascript">
+        		var lang = ["Java", "UI",".Net","SQL"];
+        		for (var i = 0; i <= lang.lenght; i++)
+        		 {
+                    
+        		    document.write(i);	
+        		}
+
+        	</script>
+
+        <h3>While Loop</h3>
+
+        
+
+        	<script type="text/javascript">
+        	    var i;
+                
+        		while(i < 7)
+        		{
+                    
+                    i++;
+                    document.write(" Display : " +i +"<br>");
+        			
+        		}
+    
+
+        	</script>
+
+        
+        <h3> Do-While Loop</h3>
+        <p id="demo7"></p>
+            <script >
+                var i = 0;
+                var str = "";
+                do{
+                    str += " Number : " + i + "<br>";
+                    i++;
+                
+                }
+                while(i < 5);
+                    document.getElementById("demo7").innerHTML = str;
+                    //document.write(" Number : "+i + "<br>");
+        		
+        	</script>
+
+        <h3>If-Statements</h3>
+            <script >
+                var i = 5;
+                if(i < 5)
+                {
+                    document.write("less than 5");
+                }
+                else if(i > 5)
+                {
+                    document.write("Greater than 5");
+                }
+                else
+                    document.write("equal to the value");
+            </script>
+
+        <h3>Switch conditions</h3>
+            <script>
+                var month = "march";
+                switch(month)
+                {
+                  case 0 : month = "january";
+                           break;
+                  case 1 : month = "february";
+                           break;
+                  case 2 : month = "march";
+                           break;
+                  case 3 : month = "july";
+                           break;
+
+                }
+                document.write("Month is :" + month);
+            </script>
+
+
+            
+        
+
+    </body>
+</html>

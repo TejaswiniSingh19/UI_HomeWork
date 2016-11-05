@@ -13,3 +13,8 @@ null      : Variables can be emptied by setting their value to null.
 Site3     : http://lucybain.com/blog/2014/null-undefined-undeclared/
 Undefined : If the value hasn't been defined yet .
 null      : It is variable defined to have null value
+
+
+Site4     : http://www.w3schools.com/js/js_datatypes.asp
+Undefined : It is a variable without a value, has the value undefined.
+null      :  In Javascript the datatype of object is null , You can also empty the oject by setting it to null, it means " nothing".

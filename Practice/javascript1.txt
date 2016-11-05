@@ -21,3 +21,7 @@ Data Types : undefined
 
    Undefined : you have declared a variable but not assigned any value to that
    null      : Intensionally want to make it blank
+
+
+
+  

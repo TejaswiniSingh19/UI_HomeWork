@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script >
+            function book(author, publisher, age) 
+            {
+                this.author1  = author;
+                this.publish = publisher;
+                this.age1    = age;
+            }
+            var book1 = new book("Chethan Bhagath", "Rose", 45); // book1 is an instance of book
+            var book2 = new book("Durjoy Datta", "Lilly",35); // book2 is an instance of book
+
+
+            book.prototype.prize="$40";
+
+            document.write(book1.age1+"<br/>")
+            document.write(book1.publish+"<br>")
+            document.write(book1.author1 + "<br>")
+            document.write(book2.age1 + "<br>")
+            document.write(book2.publish + "<br>")
+            document.write(book2.author1 + "<br>")
+            document.write(book1 instanceof book);
+            //document.write(book3 instanceof book);
+            //document.write(Teju instanceof book);
+            
+    
+        </script>
+    </body>
+</html>
