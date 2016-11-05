@@ -1,0 +1,21 @@
+1) java script call apply bind methods? how to use them? what are the use cases when we have to use them?
+
+Ans :  
+
+
+apply()   :  In this we pass the arguments in an array and it will invoke the function
+
+call()    :  It is similar to apply() but here we pass the arguments one by one
+
+bind()    :  It creates a new function and we need to pass
+
+
+		
+	call/apply calls the function immediately where as bind creates a function
+
+
+
+http://javascriptissexy.com/javascript-apply-call-and-bind-methods-are-essential-for-javascript-professionals/
+http://stackoverflow.com/questions/15455009/javascript-call-apply-vs-bind
+https://codeplanet.io/javascript-apply-vs-call-vs-bind/
+http://hangar.runway7.net/javascript/difference-call-apply

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script>
+		var hero="brad";
+		var obj={
+			name:"teja",
+			age:20,
+			hero:"pitt",
+			getHero:function(){
+				return this.hero;
+			}
+		}
+console.log(obj.getHero()); // takes current value
+var func1=obj.getHero;
+console.log(func1()); // takes global value
+console.log(func1.call(obj));// using call we are forcefully assigning this keyword to obj name
+console.log(func1.apply(obj));
+
+function mul(a,b){
+	return this.c+this.d+a+b;
+}
+var obj1={
+	c:4,
+	d:5
+}
+console.log(mul.call(obj1,2,3));
+console.log(mul.apply(obj1,[4,6]));
+var newfun=mul.bind(obj1);
+console.log(newfun(2,4));
+	
+
+/*	function add(a,b,c)
+			{
+				return this.
+			}
+
+			var add1 = new add(3,4,5);
+			document.write(add1 + "<br>");
+			console.log(add1)
+			*/
+
+	
+		</script>
+	</body>
+</html>
