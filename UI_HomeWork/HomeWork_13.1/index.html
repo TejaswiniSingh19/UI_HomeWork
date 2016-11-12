@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HomeWork_13.1</title>
+	</head>
+	<body>
+		<p>An unordered list:</p>
+			<ul>
+  				<li>JavaScript</li>
+  				<li>AngularJs</li>
+  				<li>Java</li>
+			</ul>
+
+		
+		<p id="hi" style="border: 1px solid black;"></p>
+    	<div class="hello">
+			ByClassName : It returns the elements with specified class name 
+		</div>
+		<p>
+			ByTagName : It returns the elements with the specified Tag name
+		</p>
+		<p>Click the button</p>
+    	<button onclick="example()">Try it</button>
+    	
+
+    	<script type="text/javascript">
+    		function example()
+		    	{
+		    		var a = document.querySelectorAll("li");
+		    		a[0].style.backgroundColor = "pink";
+		    		var x = 4;
+					var y = x++;
+					document.getElementById("hi").innerHTML = x + " " + y;
+					var y = document.getElementsByClassName("hello");
+		    		y[0].style.color = "blue";
+		    		y[0].style.fontStyle = "italic";
+		    		y[0].style.fontWeight = "bold";
+		    		var z = document.getElementsByTagName("p");
+		    		z[2].style.color = "red";
+		    		z[2].style.border = "2px dashed black";
+				}
+		</script>
+		
+	</body>
+</html>

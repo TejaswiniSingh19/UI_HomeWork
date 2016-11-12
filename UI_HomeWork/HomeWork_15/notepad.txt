@@ -1,0 +1,18 @@
+Subject : UIClass-August-24-2016 HomeWork 15 <Name>
+
+1) research more about event delegation.? 
+2) what is jQuery.?
+
+Ans :
+
+
+
+3) why do we use jquery.?
+
+
+
+4) $(document).ready vs window.onload.?
+
+
+
+5) what is $.?

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HomeWork-14</title>
+	</head>
+	<body>
+	<h1>AddEventListener</h1>
+	<button id="button"> Click Here </button><br><br>
+	<button id="btn">Enter</button>
+	<p id="hi" ></p>
+	<p id="hello"></p>
+		<script>
+
+            document.getElementById("button").addEventListener("click",function()
+            {
+            	alert("This is what you have clicked")
+            });
+
+            var x = document.getElementById("btn");
+            x.addEventListener("mouseover", display);
+            x.addEventListener("mouseout", show);
+
+            function display()
+            { 
+               document.getElementById("hi").innerHTML += " MouseIn <br>";
+            }
+
+            function show()
+            {
+               document.getElementById("hi").innerHTML += "MouseOut <br>";
+            }
+
+		</script>
+
+        <h2>Event Propagation, Event Bubling, Event Capturing</h2>
+		<style>
+			div {
+				border:2px solid black;
+			}
+		</style>
+		<div id="did" >
+			This is a parent class
+			<p id="pid" style="border :2px dashed red"> This is a child class </p>
+		</div>
+
+		<script type="text/javascript">
+			document.getElementById("pid").addEventListener('click',function(event)
+			{
+				console.log('child is invoked');
+				
+			     //console.log(event);
+				//event.stopPropagation();
+				//event.stopImmediatePropagation();
+				
+				//document.write('child is invoked');  document is directing to another page but parent is not getting invoked if we click on child
+			});
+
+			document.getElementById("did").addEventListener('click',function(event)
+		     {
+				console.log('parent is invoked');
+				//event.stopPropagation();
+				
+				//document.write('parent is invoked');
+			}); // set it to true to check the output for event capturing
+			
+
+			//????  event is printing undefined in console
+
+		</script>
+
+
+    
+	</body>
+</html>

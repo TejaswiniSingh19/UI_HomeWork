@@ -1,0 +1,58 @@
+HTML DOM (Document Object Model)
+	Whenever a web page is loaded the browser creates a DOM . DOM is a platform that allows the programs and scripts to dynamically access and update the content, structure and style of a document.
+
+
+
+1) Practice all the selectors .?
+
+	document.getElementsByTagName  : It returns all the elements with thw spcified Tag name. It uses a node list object to represent the collection of nodes.They will be accessed by index numbers which starts with 0.
+	eg: <p>...</p>
+	    var x=document.getElementsByTagName(p);
+	    x[0]=.....;
+
+	http://www.w3schools.com/jsref/met_document_getelementsbytagname.asp
+	https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName
+
+
+
+	document.getElementById        : Here the id is a string which is used to identify an element. It returns 	
+		the element that has the ID attribute, it also returns null if there is no element with the specified ID. It should be unique, if we have two elements refering to the same ID then this method returns the first element.
+	eg: document.getElementById(ElementId);
+
+	http://www.w3schools.com/jsref/met_document_getelementbyid.asp
+	https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
+
+
+	
+	document.getElementsByClassName :  It returns the elements with specified class name . It also has the node elements.
+	eg: document.getElementsByClassName();
+
+	http://www.w3schools.com/jsref/met_document_getelementsbyclassname.asp
+	https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName
+
+
+	document.querySelectorAll       :  It returns all the elements in the document that matches the specified group of selectors 
+
+
+
+
+2) event listener .addEventListener, 
+Ans :
+Event : When a user clicks on the HTML element the event is said to be occured.
+		generally we use "onClick" to perform this action.
+
+	onload()    :
+	onunload()  :
+	onChange()  : It is used to change the value of an element.
+	onmouseover():
+	onmouseout() :
+
+
+	addEventListener() : It attaches an event handler to an element without modifying existing event. we can add many event handlers to one element.
+
+
+
+
+	https://developer.mozilla.org/en-US/docs/Web/Events/change
+	http://www.w3schools.com/jsref/event_onchange.asp
+

@@ -1,0 +1,73 @@
+Subject : UIClass-August-24-2016 HomeWork 14 <Name>
+
+1) selector.addEventListener(eventType, handlerFunction, captureFlag)
+
+Ans :
+addEventListener(event,function,useCapture)
+	first parameter specifies the event which is to be occured i.e click, mouseover, mouseout etc
+	second parameter specifies the function which should be called when event is occured.
+	third parameter is an optional and it uses a boolean value 
+
+	Here instead of onClick we use click
+	We cannot apply this for multiple div or p,
+
+	http://www.w3schools.com/js/js_htmldom_eventlistener.asp
+	http://stackoverflow.com/questions/6348494/addeventlistener-vs-onclick
+
+
+
+2) what is event propagation?
+
+Ans : If you have parent and child elements consider as div and p , you are trying to invoke sam eventType on    both the elements i.e if click(event) is performed then the event propagation occurs.
+
+If we click on parent only parent class is invoked.
+if we click on child both the parent and child is invoked
+
+
+
+
+3) what is event bubling and capturing?
+
+Ans : 
+
+Event bubling : Child element is invoked first then the parent element will be invoked.
+Event Capturing : Parent element is invoked first then the child element will be invoked.
+
+	addEventListener(event,function,captureFlag)
+	captureFlag : It should be applied to parent.
+		If we do not specify anything it takes bubling(displays child then parent).
+		false : then also it takes bubling(displays child then parent).
+		true  : then it takes capturing(displays parent then child).
+
+
+	http://www.w3schools.com/js/js_htmldom_eventlistener.asp
+
+
+
+
+4) event.stopPropagation?
+
+Ans : 
+	When clicked on child element
+	  in case of bubling   : only child class element is invoked.
+	  in case of capturing : only parent class element is invoked.
+
+
+
+https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation
+
+
+
+5) event.stopImmediatePropagation?
+
+Ans : 
+	That will be the last event handler that will be invoked.
+
+
+
+
+
+
+
+event.target    : reference to the element where you might have performed the action
+event.target.innerHTML : we can have a reference inside the html

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HomeWork_13.1</title>
+	</head>
+	<body>
+	<h1> Event Listener</h1>
+	<h2 onClick="this.innerHTML='Thank You!!'"> Welcome </h2> 
+	<button onclick="display()"> Today's Date </button>
+	<p id="hi"></p>
+	<div onmouseover = "move(this)" onmouseout = "out(this)">Mouse here</div><br>
+	Enter you Name: <input type="text" id="name" onChange = "display()">
+	
+		<script>
+		function display()
+		{
+			document.getElementById("hi").innerHTML=Date();
+			var x = document.getElementById("name");
+			x.value = x.value.toUpperCase(); 
+		}
+		function move(obj)
+		{
+           obj.innerHTML = "Good-Bye";
+		}
+		function out(obj)
+		{
+			obj.innerHTML = "Welcome";
+		}
+	    </script>
+	   
+        
+
+        <p> addEventListener
+        <button id = "button"> Click Here</button>
+		<script type="text/javascript">
+		document.getElementById("button").addEventListener("click", function()
+		{
+    		alert("Hello World!");
+		});
+		</script>
+		</p>
+
+
+		 
+		
+		<label> You choose  : </label>
+			<select onChange="change(event)">
+  				<option >Hadoop</option>
+  				<option >Cucumber</option>
+  				<option >Selenium</option>
+			</select>
+        
+
+       	<script>
+        	function change(event)
+        	{
+        		alert('You choose : ' + event.target.value);   //target is used to display the selected element
+        		//console.log('You choose' + event.target.value);
+        	
+
+
+        }
+        	
+        </script>
+	</body>
+</html>
