@@ -40,19 +40,41 @@
 		</style>
 		<div id="did" >
 			This is a parent class
-			<p id="pid" style="border :2px dashed red"> This is a child class </p>
+			<p id="pid" style="border :2px dashed red"> This is a 1st child class 
+             <span id="sid" style = "border :2px dotted purple"> This is grand child</span>
+			</p>
+			<p id="pid" style="border :2px dashed green">This is a 2nd child class</p>
+			<p id="pid" style="border :2px dashed hotpink">This is a 3rd child class</p>
 		</div>
 
 		<script type="text/javascript">
 			document.getElementById("pid").addEventListener('click',function(event)
 			{
-				console.log('child is invoked');
+				console.log('child is invoked 1');
 				
 			     //console.log(event);
 				//event.stopPropagation();
 				//event.stopImmediatePropagation();
 				
 				//document.write('child is invoked');  document is directing to another page but parent is not getting invoked if we click on child
+			});
+
+			document.getElementById("pid").addEventListener('click',function(event)
+			{
+				console.log('child is invoked 2');
+
+			});
+
+			document.getElementById("pid").addEventListener('click',function(event)
+			{
+				console.log('child is invoked 3');
+
+			});
+
+			document.getElementById("sid").addEventListener('click',function(event)
+			{
+				console.log('Grand child is invoked');
+
 			});
 
 			document.getElementById("did").addEventListener('click',function(event)
