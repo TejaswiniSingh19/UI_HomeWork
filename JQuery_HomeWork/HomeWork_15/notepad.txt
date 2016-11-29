@@ -1,0 +1,49 @@
+Subject : UIClass-August-24-2016 HomeWork 15 <Name>
+
+cdn are more faster because the peolpe from cdn might have multiple servers across the world. cdn servers are closely located so that it gives you faster download than the local server.
+
+1) research more about event delegation.? 
+2) what is jQuery.?
+
+Ans :
+JQuery is a javascript library.
+
+we can use jquery or $.
+
+
+3) why do we use jquery.?
+
+4) $(document).ready vs window.onload.?
+
+5) what is $.?
+
+
+
+JQuery :
+
+
+click()       : This method attaches an event handler function to an HTML element.The function is 								 executed when the user clicks on the HTML element.
+dblclick()    : This function is executed when the user double-clicks on the HTML element.
+mouseenter () : The function is executed when the mouse pointer enters the HTML element.
+mouseleave()  : The function is executed when the mouse pointer leaves the HTML element.
+mousedown()   : The function is executed, when the left, middle or right mouse button is pressed down, while the 				  mouse is over the HTML element.
+mouseup()     : The function is executed, when the left, middle or right mouse button is released, while the 					 mouse is over the HTML element.
+hover()       : The hover() method takes two functions and is a combination of the mouseenter() and 							  mouseleave() methods.The first function is executed when the mouse enters the HTML element, 					  and the second function is executed when the mouse leaves the HTML element.
+focus()       : The function is executed when the form field gets focus.
+blur()        : The function is executed when the form field loses focus.
+on()          : The on() method attaches one or more event handlers for the selected elements.
+hide()        :  It is used to hide a function.
+toggle()      : This method is used to hide and show the methods. instead of writing separately hide() and 						  show() we can use toggle().
+fadeIn()      : This method is used to fade in a hidden element.
+  				$(selector).fadeIn(speed,callback);
+fadeOut()     : This method is used to fade out a visible element.
+				$(selector).fadeIn(speed,callback);
+fadeToggle()  : This method toggles between the fadeIn() and fadeOut() methods.
+                 $(selector).fadeToggle(speed,callback);
+fadeTo()      : This method allows fading to a given opacity (value between 0 and 1).
+				 $(selector).fadeTo(speed,opacity,callback);
+slideUp()     :
+slideDown()   :
+slideToggle() :
+
+

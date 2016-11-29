@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+
+	<div style="border: 1px solid black;"> This is the main page in div
+		<p> This is a class in div</p>
+	</div>
+
+	<p style="border: 1px dashed blue;">This is the page in p</p>
+
+	<div id="class1" style="border: 1px dotted pink;"> This is the second div</div><br>
+
+	<button> click here </button><br>
+
+		<script src="https://code.jquery.com/jquery-3.1.1.js">
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function()
+			{
+				$("button").click(function(){
+					// $("button").dblclick(function(){}) we need to double click in this function
+					$("#class1").hide();
+				   //$("div:first").hide();
+				});
+			});
+		</script>
+		<p id="pid" style="border: 1px solid black;"> This is new page </p>
+		<script>
+			$(document).ready(function()
+			{
+				$("#pid").mouseenter(function()
+				{
+					alert("Welcome to my page");
+				});
+			});
+		</script>
+	</body>
+</html>
