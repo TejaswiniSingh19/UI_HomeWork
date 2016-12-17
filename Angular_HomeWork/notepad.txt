@@ -1,0 +1,33 @@
+Subject : UIClass-August-24-2016 HomeWork 19 <Name>
+
+1) One way data binding & two way data binding
+Ans : 
+One way data binding : In one way data binding we cannot update data from view. These systems can bind the data only in one direction.
+
+Two way data binding : It is the synchronization between the model and the view. When data in the model changes, the view reflects the change, and when data in the view changes, the model is updated as well.
+
+
+2) ng-init, ng-model, ng-app, ng-bind 
+Ans :
+ng-init   : It starts the angular application
+ng-model  : It binds the input fields to the controller properties. It defines the model that is variable to be 			used in AngularJS
+ng-app    : It initalizes the application data. It defines the root element. It will also load the AngularJS 				modules in angular application
+ng-bind   : It binds the content of an html element to application data.
+
+
+
+3) {{}}  angular expressions
+Ans :
+This is used instead of ng-bind to bind the data
+
+
+4) $scope in angular js
+Ans:
+It is used to define the value of model.
+
+
+5) can we define mutliple controllers within an application.
+Ans:
+Yes we define multiple controllers within an application
+
+
