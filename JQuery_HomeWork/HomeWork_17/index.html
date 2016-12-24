@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<table>
+			<thead>
+				<tr>
+				<th>Name</th>
+				<th>Age</th>
+				<th>Id</th>
+				</tr>
+			</thead>
+			<tbody id="tableBody">
+			</tbody>
+		</table>
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<script>
+		var data = {
+		name : 'posting data',
+		age : 46
+		}
+		jQuery.ajax({
+		url : 'http://rest.learncode.academy/api/johnbob/friends/',
+		method : 'GET',
+		success : function(data){
+			var str = '';
+			data.forEach(function(item){
+				
+				str = '<tr><td>' + item.id + '</td><td>' + item.name +'</td><td>' + item.age +'</td></th>'
+			})
+			console.log(data);
+		},
+		error : function(xhr){
+			console.log(xhr);
+
+		}
+		})
+	</script>
+</body>
+</html>
