@@ -1,0 +1,13 @@
+
+Subject : UIClass-August-24-2016 HomeWork 3 <Name>
+
+practice every selector listed by an example and explain the example. 
+
+1) all selectors mentioned in the link : http://www.w3schools.com/cssref/css_selectors.asp
+
+.class  :  This selects an elements with the specific class name.
+  *     :  This selector selects all the elements.It also selects elemnts inside another elements.
+div > p :  Selects all <p> elements where the parent is a <div> element.
+div + p :  Selects all <p> elements that are placed immediately after <div> elements.
+p ~ ul  :  Selects every <ul> element that are preceded by a <p> element.
+[]      :  Style all <a> elements with a target attribute:.
