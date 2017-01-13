@@ -1,3 +1,14 @@
 1) what are semantic element? 
+Ans : Semantic element clearly describes its meaning to both the browser and the developer.
+
+
 2) why do we need to use sematic elements? advantages?
-3) Reaserach and write the description, and example html all the tags : article, aside, details, figcaption, figure, footer, header, main, mark, nav, section, summary, time
+
+
+
+3) Reaserach and write the description, and example html all the tags : article, aside, details, figcaption, figure, footer, header, main, mark, nav, section, summary, time.
+Ans :
+<article> : It specifies independent, self-contained content.
+
+<section> : It defines a section in a document
+<aside>   : 
