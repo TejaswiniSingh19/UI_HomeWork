@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AngularJs</title>
+</head>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script>
+	angular.module("sample1",[]);
+</script>
+
+<div ng-app="sample1" ng-init="legalName=[{fname:'Tejaswini',lname:'Singh'},
+							 {fname:'Ranjith',lname:'Ranga'},
+							 {fname:'Lavanya',lname:'Yadlapalli'},
+							 {fname:'Manya',lname:'Narang'}]">
+		<p ng-repeat="x in legalName">
+			FirstName : {{ x.fname }}<br>
+			LastName : {{ x.lname }}<br>
+		</p>
+	</div>
+
+</body>
+</html>

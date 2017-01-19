@@ -6,19 +6,31 @@
 </head>
 <body>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	
+	<div ng-app="sample" ng-init="legalName=[{fname:'Tejaswini',lname:'Singh'},
+							 {fname:'Ranjith',lname:'Ranga'},
+							 {fname:'Lavanya',lname:'Yadlapalli'},
+							 {fname:'Manya',lname:'Narang'}]">
+		<p> Fill the details below</p>
+		<p> First Name:<input text="text" ng-model="name"></p>
+		<p ng-bind="name" class="ng-binding"></p>
+		
+		<p> Last Name:<input text="text" ng-model="last_name"></p>
+		<p>{{last_name}}</p>
+		<p> Sum of two numbers 3+5 is {{3+5}}</p>
+
+		<p ng-repeat="x in legalName">
+			FirstName : {{ x.fname }}<br>
+			LastName : {{ x.lname }}<br>
+		</p>
+
+		
+	</div> 
+	
 	<script>
 		angular.module("sample",[]);
 	</script>
 	
-	<div ng-app="sample">
-		<p> Fill the details below</p>
-		<p> First Name:<input text="text" ng-model="name"></p>
-		<p ng-bind="name"></p>
-		<p> Last Name:<input text="text" ng-model="last_name"></p>
-		<p ng-bind="last_name"></p>
-		<p> Sum of two numbers 3+5 is {{3+5}}</p>
-
-	</div>
 	
 </body>
 </html>
