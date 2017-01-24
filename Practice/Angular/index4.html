@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Controllers</title>
+</head>
+<body>
+	<div ng-app="myApp1">
+		<div ng-controller="myCtrl">
+			Name : {{name}}</br>
+			<!-- Click to get alert : <button ng-click="func()"> Click Here!</button> -->
+		</div>
+		<div ng-controller="ctrl">
+			Second Name : {{secondname}}</br>
+			<div ng-controller="thirdCtrl">
+				Third Name : {{thirdname}}</br>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script>
+		angular.module('myApp1',[]);
+		angular.module('myApp1').controller('myCtrl',['$scope',function($scope){
+			$scope.name='Name in first controller';
+			// $scope.func(){
+			// 	alert('You have clicked an alert');
+			// }
+			
+		}])
+		angular.module('myApp1').controller('ctrl',['$scope',function($scope){
+			$scope.secondname='Name in second controller';
+			
+		}])
+		angular.module('myApp1').controller('thirdCtrl',['$scope',function($scope){
+			$scope.thirdname='Name in third controller';
+			
+		}])
+	</script>
+</body>
+</html>
