@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	
+
+	<div ng-app="myApp">
+		<div ng-controller="myCtrl">
+			<div ng-repeat="item in arr|limitTo:5">{{item}}
+			{{item|reverse}}</div>
+			<table>
+				<thead>
+					<tr>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Age</th>
+					</tr>
+					
+				</thead>
+				<tbody>
+					<tr ng-repeat="item in arr2">
+						<td>{{item.firstName}}</td>
+						<td>{{item.lastName | uppercase}}</td>
+						<td>{{item.age}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<script>
+		angular.module('myApp',[]);
+		angular.module('myApp').controller('myCtrl',['$scope',function($scope){
+			$scope.arr = ['hi','hello','how','are','you']
+			$scope.arr2=[
+			{
+				firstName : 'Shalu',
+				lastName :'Singh',
+				age : 20
+			},
+			{
+				firstName : 'Dumbu',
+				lastName :'Ranjith',
+				age : 23
+
+			},
+			{
+				firstName : 'Shivani',
+				lastName :'Thakur',
+				age : 14
+
+			},
+			{
+				firstName : 'Lalli',
+				lastName :'Yadlapalli',
+				age :28
+
+			},
+			{
+				firstName : 'Maalvika',
+				lastName :'Sundar',
+				age :26
+
+			},
+			{
+				firstName : 'Hardeep',
+				lastName :'Singh',
+				age :23
+
+			}]
+		}])
+
+		angular.module('myApp').filter('reverse',function(){
+			return function(data){
+				if(data ==''){
+					return data
+				}
+				if(data){
+					return data.split('').reverse().join();
+				}
+			}
+		})
+	</script>
+</body>
+</html>
